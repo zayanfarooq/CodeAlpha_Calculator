@@ -1,0 +1,178 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.calculator{
+
+    width:360px;
+    padding:25px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 8px 32px rgba(0,0,0,.4);
+
+}
+
+.calculator h2{
+
+    text-align:center;
+    color:#fff;
+    margin-bottom:20px;
+
+}
+
+#display{
+
+    width:100%;
+    height:70px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    background:#fff;
+
+    text-align:right;
+
+    padding:15px;
+
+    font-size:30px;
+
+    color:#333;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+.buttons button{
+
+    height:65px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    background:#ffffff;
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
+
+}
+
+.operator{
+
+    background:#ff9800 !important;
+
+    color:white !important;
+
+}
+
+.equal{
+
+    grid-column:span 2;
+
+    background:#00c853 !important;
+
+    color:white !important;
+
+}
+
+.clear{
+
+    background:#e53935 !important;
+
+    color:white !important;
+
+}
+
+.delete{
+
+    background:#6c63ff !important;
+
+    color:white !important;
+
+}
+
+/* Responsive */
+
+@media(max-width:450px){
+
+.calculator{
+
+    width:95%;
+
+    padding:20px;
+
+}
+
+.buttons button{
+
+    height:55px;
+
+    font-size:20px;
+
+}
+
+#display{
+
+    height:60px;
+
+    font-size:24px;
+
+}
+
+}
